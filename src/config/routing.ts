@@ -18,9 +18,9 @@ import * as MOONRIVER from './tokens/moonriver'
 import * as OKEX from './tokens/okex'
 import * as OPTIMISM from './tokens/optimism'
 import * as PALM from './tokens/palm'
+import * as RSK from './tokens/rsk'
 import * as TELOS from './tokens/telos'
 import * as XDAI from './tokens/xdai'
-import * as RSK from './tokens/xdai'
 
 type ChainTokenList = {
   readonly [chainId: number]: Token[]
@@ -249,7 +249,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ],
   [ChainId.KAVA]: [...WRAPPED_NATIVE_ONLY[ChainId.KAVA], KAVA.USDC, KAVA.USDT, KAVA.WETH, KAVA.WBTC, KAVA.DAI],
   [ChainId.METIS]: [...WRAPPED_NATIVE_ONLY[ChainId.METIS], METIS.USDC, METIS.USDT, METIS.WETH, METIS.DAI],
-  [ChainId.RSK]: [...WRAPPED_NATIVE_ONLY[ChainId.RSK], RSK.USDC, RSK.USDT, RSK.WETH],
+  [ChainId.RSK]: [...WRAPPED_NATIVE_ONLY[ChainId.RSK], RSK.USDC, RSK.WETH],
 }
 
 export const ADDITIONAL_BASES: {
@@ -647,7 +647,7 @@ export const COMMON_BASES: ChainTokenList = {
   ],
   [ChainId.KAVA]: [...WRAPPED_NATIVE_ONLY[ChainId.KAVA], KAVA.USDC, KAVA.USDT, KAVA.WETH, KAVA.WBTC, KAVA.DAI],
   [ChainId.METIS]: [...WRAPPED_NATIVE_ONLY[ChainId.METIS], METIS.USDC, METIS.USDT, METIS.WETH, METIS.DAI],
-  [ChainId.RSK]: [...WRAPPED_NATIVE_ONLY[ChainId.RSK], RSK.USDC, RSK.USDT, RSK.WETH],
+  [ChainId.RSK]: [...WRAPPED_NATIVE_ONLY[ChainId.RSK], RSK.USDC, RSK.WETH],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -797,7 +797,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ],
   [ChainId.KAVA]: [...WRAPPED_NATIVE_ONLY[ChainId.KAVA], KAVA.USDC, KAVA.USDT, KAVA.WETH, KAVA.WBTC, KAVA.DAI],
   [ChainId.METIS]: [...WRAPPED_NATIVE_ONLY[ChainId.METIS], METIS.USDC, METIS.USDT, METIS.WETH, METIS.DAI],
-  [ChainId.RSK]: [...WRAPPED_NATIVE_ONLY[ChainId.RSK], RSK.USDC, RSK.USDT, RSK.WETH],
+  [ChainId.RSK]: [...WRAPPED_NATIVE_ONLY[ChainId.RSK], RSK.USDC],
 }
 
 export const PINNED_PAIRS: { readonly [chainId: number]: [Token, Token][] } = {

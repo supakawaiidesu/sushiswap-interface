@@ -217,6 +217,10 @@ const chains: ChainObject = {
     link: 'https://andromeda-explorer.metis.io/',
     builder: explorers.blockscout,
   },
+  [ChainId.RSK]: {
+    link: 'https://explorer.rsk.co/',
+    builder: explorers.blockscout,
+  },
 }
 
 export function getExplorerLink(

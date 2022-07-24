@@ -24,6 +24,7 @@ export const GRAPH_HOST = {
   [ChainId.OPTIMISM]: THE_GRAPH,
   [ChainId.KAVA]: 'https://pvt.graph.kava.io',
   [ChainId.METIS]: 'https://andromeda.thegraph.metisdevops.link:8000',
+  [ChainId.RSK]: 'https://andromeda.thegraph.metisdevops.link:8000',
 }
 
 export const TRIDENT = {

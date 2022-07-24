@@ -23,6 +23,7 @@ export const BLOCKS = {
   [ChainId.OPTIMISM]: 'kybernetwork/optimism-blocks',
   [ChainId.KAVA]: 'sushiswap/blocks-kava',
   [ChainId.METIS]: 'sushiswap/blocks-metis',
+  [ChainId.RSK]: 'sushiswap/blocks-metis',
 }
 
 // @ts-ignore TYPE NEEDS FIXING
