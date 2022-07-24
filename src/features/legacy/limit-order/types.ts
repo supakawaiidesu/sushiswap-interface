@@ -1,4 +1,4 @@
-import { Price, Token } from '@sushiswap/core-sdk'
+import { Price, Token } from '@supakawaiidesu/core-sdk'
 import { ILimitOrderData, LimitOrder, OrderStatus } from '@sushiswap/limit-order-sdk'
 
 export interface LimitOrdersResponse {

@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from '@supakawaiidesu/core-sdk'
 
 const RPC = {
   [ChainId.ETHEREUM]: 'https://api.sushirelay.com/v1',
@@ -34,6 +34,7 @@ const RPC = {
   [ChainId.OPTIMISM]: 'https://mainnet.optimism.io',
   [ChainId.KAVA]: 'https://evm.kava.io',
   [ChainId.METIS]: 'https://andromeda.metis.io/?owner=1088',
+  [ChainId.RSK]: 'https://public-node.rsk.co',
 }
 
 export default RPC

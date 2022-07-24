@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from '@supakawaiidesu/core-sdk'
 
 const Arbitrum = 'https://raw.githubusercontent.com/sushiswap/icons/master/network/arbitrum.jpg'
 const Avalanche = 'https://raw.githubusercontent.com/sushiswap/icons/master/network/avalanche.jpg'
@@ -58,6 +58,7 @@ export const NETWORK_ICON: Record<number, string> = {
   [ChainId.OPTIMISM]: Optimism,
   [ChainId.KAVA]: Kava,
   [ChainId.METIS]: Metis,
+  [ChainId.RSK]: Metis,
 }
 
 export const NETWORK_LABEL: Record<number, string> = {
@@ -93,4 +94,5 @@ export const NETWORK_LABEL: Record<number, string> = {
   [ChainId.OPTIMISM]: 'Optimism',
   [ChainId.KAVA]: 'Kava',
   [ChainId.METIS]: 'Metis',
+  [ChainId.RSK]: 'Rsk',
 }

@@ -10,7 +10,7 @@ import {
   Token,
   Trade as LegacyTrade,
   TradeVersion,
-} from '@sushiswap/core-sdk'
+} from '@supakawaiidesu/core-sdk'
 import { Trade as TridentTrade } from '@sushiswap/trident-sdk'
 import Chip from 'app/components/Chip'
 import Typography from 'app/components/Typography'

@@ -2667,6 +2667,22 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@supakawaiidesu/core-sdk@1.0.0-alpha.645":
+  version "1.0.0-alpha.645"
+  resolved "https://registry.yarnpkg.com/@supakawaiidesu/core-sdk/-/core-sdk-1.0.0-alpha.645.tgz#fb9bab53dec8286255749e623569f3baf0ff76cc"
+  integrity sha512-LczGIMARmGZ2gjDztasQlFhH9Rj7p0On5/Aqfhg2d/kiIHoGGu+64oQDbX8ABrJh5F19u9AlnerNhDNk76+1Ig==
+  dependencies:
+    "@ethersproject/address" "^5.4.0"
+    "@ethersproject/bignumber" "^5.4.0"
+    "@ethersproject/providers" "^5.4.0"
+    "@ethersproject/solidity" "^5.4.0"
+    big.js "^6.1.1"
+    decimal.js-light "^2.5.0"
+    jsbi "^4.1.0"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.0"
+    toformat "^2.0.0"
+
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@surma/rollup-plugin-off-main-thread/-/rollup-plugin-off-main-thread-2.2.3.tgz#ee34985952ca21558ab0d952f00298ad2190c053"

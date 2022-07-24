@@ -1,5 +1,5 @@
 // a list of tokens by chain
-import { ChainId, SUSHI, Token, WNATIVE } from '@sushiswap/core-sdk'
+import { ChainId, SUSHI, Token, WNATIVE } from '@supakawaiidesu/core-sdk'
 
 import * as ARBITRUM from './tokens/arbitrum'
 import * as AVALANCHE from './tokens/avalanche'
@@ -20,6 +20,8 @@ import * as OPTIMISM from './tokens/optimism'
 import * as PALM from './tokens/palm'
 import * as TELOS from './tokens/telos'
 import * as XDAI from './tokens/xdai'
+import * as RSK from './tokens/xdai'
+
 type ChainTokenList = {
   readonly [chainId: number]: Token[]
 }
@@ -78,6 +80,7 @@ const WRAPPED_NATIVE_ONLY: ChainTokenList = {
   [ChainId.OPTIMISM]: [WNATIVE[ChainId.OPTIMISM]],
   [ChainId.KAVA]: [WNATIVE[ChainId.KAVA]],
   [ChainId.METIS]: [WNATIVE[ChainId.METIS]],
+  [ChainId.RSK]: [WNATIVE[ChainId.RSK]],
 }
 
 // used to construct intermediary pairs for trading
@@ -246,6 +249,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ],
   [ChainId.KAVA]: [...WRAPPED_NATIVE_ONLY[ChainId.KAVA], KAVA.USDC, KAVA.USDT, KAVA.WETH, KAVA.WBTC, KAVA.DAI],
   [ChainId.METIS]: [...WRAPPED_NATIVE_ONLY[ChainId.METIS], METIS.USDC, METIS.USDT, METIS.WETH, METIS.DAI],
+  [ChainId.RSK]: [...WRAPPED_NATIVE_ONLY[ChainId.RSK], RSK.USDC, RSK.USDT, RSK.WETH],
 }
 
 export const ADDITIONAL_BASES: {
@@ -643,6 +647,7 @@ export const COMMON_BASES: ChainTokenList = {
   ],
   [ChainId.KAVA]: [...WRAPPED_NATIVE_ONLY[ChainId.KAVA], KAVA.USDC, KAVA.USDT, KAVA.WETH, KAVA.WBTC, KAVA.DAI],
   [ChainId.METIS]: [...WRAPPED_NATIVE_ONLY[ChainId.METIS], METIS.USDC, METIS.USDT, METIS.WETH, METIS.DAI],
+  [ChainId.RSK]: [...WRAPPED_NATIVE_ONLY[ChainId.RSK], RSK.USDC, RSK.USDT, RSK.WETH],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -792,6 +797,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ],
   [ChainId.KAVA]: [...WRAPPED_NATIVE_ONLY[ChainId.KAVA], KAVA.USDC, KAVA.USDT, KAVA.WETH, KAVA.WBTC, KAVA.DAI],
   [ChainId.METIS]: [...WRAPPED_NATIVE_ONLY[ChainId.METIS], METIS.USDC, METIS.USDT, METIS.WETH, METIS.DAI],
+  [ChainId.RSK]: [...WRAPPED_NATIVE_ONLY[ChainId.RSK], RSK.USDC, RSK.USDT, RSK.WETH],
 }
 
 export const PINNED_PAIRS: { readonly [chainId: number]: [Token, Token][] } = {

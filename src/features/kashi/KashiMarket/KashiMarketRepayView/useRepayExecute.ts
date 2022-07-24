@@ -5,7 +5,6 @@ import { AddressZero } from '@ethersproject/constants'
 import { TransactionResponse } from '@ethersproject/providers'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { toShare } from '@sushiswap/bentobox-sdk'
 import {
   Currency,
   CurrencyAmount,
@@ -14,8 +13,9 @@ import {
   SUSHISWAP_MULTI_EXACT_SWAPPER_ADDRESS,
   TradeType,
   ZERO,
-} from '@sushiswap/core-sdk'
-import { Trade as LegacyTrade } from '@sushiswap/core-sdk/dist/entities/Trade'
+} from '@supakawaiidesu/core-sdk'
+import { Trade as LegacyTrade } from '@supakawaiidesu/core-sdk/dist/entities/Trade'
+import { toShare } from '@sushiswap/bentobox-sdk'
 import KashiCooker from 'app/entities/KashiCooker'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { ZERO as BigNumberZERO } from 'app/functions'

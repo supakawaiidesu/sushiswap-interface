@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, JSBI, maximum, ZERO } from '@sushiswap/core-sdk'
+import { CurrencyAmount, JSBI, maximum, ZERO } from '@supakawaiidesu/core-sdk'
 import Typography from 'app/components/Typography'
 import {
   KashiMarketDetailsView,

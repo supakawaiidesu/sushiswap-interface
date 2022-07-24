@@ -1,6 +1,6 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, NATIVE, Token, ZERO } from '@sushiswap/core-sdk'
+import { Currency, CurrencyAmount, NATIVE, Token, ZERO } from '@supakawaiidesu/core-sdk'
 import Typography, { TypographyVariant } from 'app/components/Typography'
 import { reduceBalances } from 'app/features/portfolio/AssetBalances/kashi/hooks'
 import SumUSDCValues from 'app/features/trident/SumUSDCValues'

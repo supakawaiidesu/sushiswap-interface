@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from '@supakawaiidesu/core-sdk'
 import { Feature } from 'app/enums'
 
 type FeatureMap = { readonly [chainId in ChainId]?: Feature[] }
@@ -86,6 +86,7 @@ const features: FeatureMap = {
   [ChainId.OPTIMISM]: [Feature.TRIDENT, Feature.BENTOBOX],
   [ChainId.KAVA]: [Feature.TRIDENT, Feature.BENTOBOX, Feature.LIQUIDITY_MINING],
   [ChainId.METIS]: [Feature.TRIDENT, Feature.BENTOBOX],
+  [ChainId.RSK]: [Feature.AMM, Feature.ANALYTICS, Feature.LIQUIDITY_MINING, Feature.STAKING],
 }
 
 export default features
